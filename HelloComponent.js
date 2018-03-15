@@ -23,11 +23,11 @@ const instructions = Platform.select({
  * 方式一:ES6
  * 推荐
  */
-// export default class HelloComponent extends Component {
-//     render() {
-//         return <Text style={{fontSize:20,backgroundColor:'red'}}>Hello</Text>
-//     }
-// }
+export default class HelloComponent extends Component {
+    render() {
+        return <Text style={{fontSize: 20, backgroundColor: 'red'}}>Hello.{this.props.name}</Text>
+    }
+}
 
 /**
  * 方式二：ES5
@@ -43,7 +43,7 @@ const instructions = Platform.select({
  * 方式三：函数式
  * 无状态，不能使用this
  */
-function HelloComponent(props) {
-    return <Text style={{fontSize: 20, backgroundColor: 'red'}}>Hello.{props.name}</Text>
-}
-module.exports=HelloComponent;
+// function HelloComponent(props) {
+//     return <Text style={{fontSize: 20, backgroundColor: 'red'}}>Hello.{props.name}</Text>
+// }
+// module.exports=HelloComponent;
