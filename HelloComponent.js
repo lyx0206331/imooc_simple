@@ -43,7 +43,7 @@ const instructions = Platform.select({
  * 方式三：函数式
  * 无状态，不能使用this
  */
-function HelloComponent() {
-    return <Text style={{fontSize:20,backgroundColor:'red'}}>Hello</Text>
+function HelloComponent(props) {
+    return <Text style={{fontSize: 20, backgroundColor: 'red'}}>Hello.{props.name}</Text>
 }
 module.exports=HelloComponent;

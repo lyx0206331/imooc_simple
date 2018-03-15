@@ -25,7 +25,8 @@ export default class Setup extends Component<Props> {
     render() {
         return (
             <View style={styles.container}>
-                <HelloComponent/>
+                <HelloComponent
+                    name="小明"/>
             </View>
         );
     }
