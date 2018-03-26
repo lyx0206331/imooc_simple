@@ -12,6 +12,7 @@ import {
     View
 } from 'react-native';
 import HelloComponent from './HelloComponent';
+import LifecycleComponent from "./LifecycleComponent";
 
 const instructions = Platform.select({
     ios: 'Press Cmd+R to reload,\n' +
@@ -25,8 +26,8 @@ export default class Setup extends Component<Props> {
     render() {
         return (
             <View style={styles.container}>
-                <HelloComponent
-                    name="小明"/>
+                {/*<HelloComponent name="小明"/>*/}
+                <LifecycleComponent/>
             </View>
         );
     }
